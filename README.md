@@ -1,12 +1,96 @@
-# React + Vite
+# movieWatchlist
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small React + Vite web app to search for movies and save favorites to a watchlist.
 
-Currently, two official plugins are available:
+This repository is a lightweight starter app built with Vite and React. It demonstrates component composition, context-based state for favorites, and a simple UI to browse and manage a personal movie watchlist.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Search and browse movies (UI only; replace or wire up an API if needed)
+- Add / remove movies from your watchlist
+- Persistent-ish favorites via React Context
+- Minimal, easy-to-read codebase based on Vite + React
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project structure (important files)
+
+- `index.html` — app entry
+- `src/main.jsx` — React entry
+- `src/App.jsx` — top-level app component
+- `src/components/Movie.jsx` — movie card component
+- `src/components/Watchlist.jsx` — watchlist view
+- `src/components/Nav.jsx` — navigation/header
+- `src/context/FavoriteContext.jsx` — favorites context/provider
+- `package.json` — scripts & dependencies
+
+## Quick start
+
+Prerequisites: Node.js 16+ / npm or a compatible package manager.
+
+1.  Install dependencies
+
+```powershell
+npm install
+```
+
+# movieWatchlist
+
+A small React + Vite web app to search for movies and save favorites to a watchlist.
+
+This repository is a lightweight starter app built with Vite and React. It demonstrates component composition, context-based state for favorites, and a simple UI to browse and manage a personal movie watchlist.
+
+## Features
+
+- Search and browse movies (UI only; replace or wire up an API if needed)
+- Add / remove movies from your watchlist
+- Persistent-ish favorites via React Context
+- Minimal, easy-to-read codebase based on Vite + React
+
+## Project structure (important files)
+
+- `index.html` — app entry
+- `src/main.jsx` — React entry
+- `src/App.jsx` — top-level app component
+- `src/components/Movie.jsx` — movie card component
+- `src/components/Watchlist.jsx` — watchlist view
+- `src/components/Nav.jsx` — navigation/header
+- `src/context/FavoriteContext.jsx` — favorites context/provider
+- `package.json` — scripts & dependencies
+
+## Quick start
+
+Prerequisites: Node.js 16+ / npm or a compatible package manager.
+
+1. Install dependencies
+
+```powershell
+npm install
+```
+
+2. Start the dev server
+
+```powershell
+npm run dev
+```
+
+3. Open the app
+
+Open the URL printed by Vite, usually `http://localhost:5173`.
+
+## Available scripts
+
+- `npm run dev` — start Vite dev server
+- `npm run build` — create production build
+- `npm run preview` — preview production build locally
+
+Check `package.json` for the exact scripts and versions.
+
+
+## Tests
+
+There are no automated tests included yet. Adding a small test suite with Jest or Vitest is recommended for future work.
+
+## Contributing
+
+Contributions are welcome. Feel free to open issues or PRs for bugs, enhancements, or additional features.
+
+
